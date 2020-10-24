@@ -387,16 +387,17 @@ a {
     }
     .item4 {
         grid-template-columns: 1fr 1fr;
-        padding: 50px;
+        padding: 50px 50px 20px 50px;
     }
     .item4-1 {
         display: grid;
         text-align: left;  
-        padding: 10px 30px 20px 0px;
+        padding: 10px 10px 20px 0px;
     }
     .item4-2 {
         width: 90%;
         height: auto;
+        margin-left: 20px;
         margin-top: 30px;
         margin-bottom: 70px;
         justify-items: center;
@@ -407,19 +408,16 @@ a {
         height: auto;
         height: 35px;
         align-items: center;
-        margin-left: 50px;
         box-sizing: border-box;
     }
     #btt1 {  
         background-color: var(--light-grayish-blue);  
-        margin-left: 30px;
         box-sizing: border-box;
     }
     #btt2 {   
         box-sizing: border-box;
         width: 50%;
         justify-self: left;
-        margin-left: 30px;
     }
     .item5 {
         padding-left: 50px;
