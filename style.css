@@ -24,6 +24,7 @@ h2, h3, h4, h5 {
 }
 p {
     line-height: 1.7em;
+    font-size: 14px;
 }
 .container {
     display: grid;
@@ -70,6 +71,7 @@ p {
     height: auto;
     justify-content: center;
     background-color: var(--light-grayish-blue);
+   
 }
 .item2-1 img {
     display: grid;
@@ -80,6 +82,11 @@ p {
 }
 .item2-2 {
     display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;  
+}
+.item2-2a {
+    display: grid;
     justify-content: center;
     padding: 30px;
     box-sizing: border-box;
@@ -88,7 +95,7 @@ p {
 #stparaghraph {
     padding-bottom: 1em;
 }
-.item2-3 {
+.item2-2b {
     display: grid;
     width: 100%; 
     height: auto;
@@ -96,7 +103,7 @@ p {
     margin-bottom: 70px;
     justify-items: center;
 }
-.item2-3 button {
+.item2-2b button {
     display: grid;
     width: 80%;
     height: auto;
@@ -133,7 +140,6 @@ p {
     height: auto;
     margin: 50px auto;
 }
-
 .item3-2 {
     display: grid;
     justify-content: start;
@@ -279,10 +285,161 @@ a {
 }
 .item6 .item6-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50px 50px 50px;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: center;
     justify-items: center;
-    padding: 5px;
 }
-
+@media only screen and (min-width: 640px) {
+    body {
+        max-width: 1440px;
+    }
+    h2, h3, h4, h5 {
+        /*Headings, Call-to-actions, Header Navigation*/
+       line-height: 1.7em;
+    }
+    p {
+        line-height: 1.7em;
+    }
+    /*Big Photo*/
+    .item2 {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+    .item2-1 {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 3;
+        grid-row:  1 / -1;
+    }
+    .item2-1 img {
+        margin: 0px auto;
+        width: 100%;
+    }
+    .item2-2 {
+        grid-template-columns: 1fr;
+        grid-column: 1 / 2;
+        grid-row:  1 / -1;
+        align-content: center;
+    }
+    .item2-2a {
+        padding: 0 20px;
+        text-align: left;
+    }
+    #stparaghraph {
+        padding-bottom: .3em;
+    }
+    .item2-2b {
+        grid-template-columns: 3fr 2fr;
+        width: 80%; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0 20px;
+        justify-content: center;
+    }
+    .item2-2b button {
+        width: 95%;
+        margin-top: 20px;
+    }
+    .item3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        padding: 70px 30px 50px 50px;
+    }
+    .item3-1 {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 3;
+        grid-row:  1 / -1;
+        width: 100%;
+    }
+    .item3-1 img {
+        width: 95%;
+        margin: 0px auto;
+        width: 100%;
+    }
+    .item3-2 {
+        grid-template-columns: 1fr;
+        grid-column: 1 / 2;
+        grid-row:  1 / 2;
+        padding: 0px;
+        align-content: center;
+        justify-content: left;
+    }
+    .item3-2 a {
+        justify-self: left;
+        padding-bottom: 20px;
+        padding-top: 0;
+        margin-top: 5px;
+    }
+    .item3-2 h4 {
+        justify-self: left;
+    }
+    .item3-3 {
+        grid-template-columns: 1fr;
+        grid-column: 1 / 2;
+        grid-row:  2 / 3;
+        justify-content: start;
+        padding: 30px;
+        margin: 0;
+        width: 90%;
+        height: auto;
+        background-color: transparent;
+    }
+    .item4 {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    .item4-1 {
+        display: grid;
+        text-align: left;  
+        padding: 10px 30px 20px 0px;
+    }
+    .item4-2 {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        justify-items: center;
+    }
+    .item4-2 button {
+        display: grid;
+        width: 100%;
+        height: auto;
+        height: 35px;
+        align-items: center;
+        margin-left: 50px;
+        box-sizing: border-box;
+    }
+    #btt1 {  
+        background-color: var(--light-grayish-blue);  
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+    #btt2 {   
+        box-sizing: border-box;
+        width: 50%;
+        justify-self: left;
+        margin-left: 30px;
+    }
+    .item5 {
+        padding-left: 50px;
+    }
+    .item6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  
+        padding: 50px;
+    }
+    .item6 .item6-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        align-content: flex-start;
+    }
+    .item6 .item6-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .item6 .item6-3 {
+       filter: invert(100%);
+    }
+ 
+}
